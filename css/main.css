@@ -1,0 +1,7 @@
+/* This is my CSS file */
+
+.bg-cover{
+    background: url(../img/grayslarder-1193.jpg);
+    height: 300px;
+    background-size: cover
+}
