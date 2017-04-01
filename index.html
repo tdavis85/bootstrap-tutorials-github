@@ -1,0 +1,241 @@
+<!-- Quentin Watts Bootstrap Tutorials - https://www.youtube.com/watch?v=wesUO81YX0U -->
+<!-- Use https://www.w3schools.com/bootstrap/default.asp for CSS reference-->
+<!-- REMEMBER - BootStrap is MOBILE first -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bootstrap Tutorials</title>
+        <!--Bootstrap CSS files here-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--HTML Content here-->
+<!-- Bootstrap Tutorial 5 - Using the Grid - https://www.youtube.com/watch?v=e5VQampkqdg -->
+    <!-- cols work by on that screen or larger. col-md-4 means a 4/12 column on medium screens & larger. Columns will stack if they take up more than 12/12 or if the screen size is below the col set size, md for example-->
+        <h1>BootStrap Tutorials</h1>
+        <p>Tutorials 1-4 are for getting started and setting up Bootstrap. The following tutorials are for creating pages</p>
+        <h3>Bootstrap tutorial 5 - Using the Grid</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-xs-4 bg-warning">
+                    1
+                </div>
+                <div class="col-lg-1 col-xs-4 bg-info">
+                    2
+                </div>
+                <div class="col-lg-1 col-xs-4 bg-danger">
+                    3
+                </div>
+                <div class="col-lg-1 col-xs-4 bg-success">
+                    4
+                </div>
+                <div class="col-lg-1 col-xs-4 bg-warning">
+                    5
+                </div>
+                <div class="col-lg-1 col-xs-4 bg-info">
+                    6
+                </div>
+                <div class="col-lg-1 col-xs-4 bg-danger">
+                    7
+                </div>
+                <div class="col-lg-1 col-xs-4 bg-success">
+                    8
+                </div>
+                <div class="col-lg-1 col-xs-4 bg-warning">
+                    9
+                </div>
+                <div class="col-lg-1 col-xs-4 bg-info">
+                    10
+                </div>
+                <div class="col-lg-1 col-xs-4 bg-danger">
+                    11
+                </div>
+                <div class="col-lg-1 col-xs-4 bg-success">
+                    12
+                </div>
+            </div>
+        </div>
+<!-- Bootstrap tutorial 6 - Nesting the grid - https://www.youtube.com/watch?v=x6uafDNy-F4 -->
+    <!-- Inner Divs are 'contained' in their outer divs, so they are a proportion of the outer, so on, til the cols go onto differnt lines-->
+        <h3>Bootstrap tutorial 6 - Nesting the Grid</h3>
+        <div class="container">    
+            <div class="row">
+                <div class="col-lg-12 col-md-6 bg-success">
+                    <p>This is an outer div</p>
+                    <div class="col-lg-6 col-md-6 bg-primary">
+                        <p>This is an inner div</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Bootstrap tutorial 7 - Push & Pull - https://www.youtube.com/watch?v=6UgQYdhy8uU -->
+      <!-- how to swop columns around using push and pull in Bootstrap. -->  
+        <h3>Bootstrap tutorial 7 - Push and Pull</h3>
+        <p>This is really useful for mobile optimisation, with articles/images. Using push and pull to swap column positions, and having a medium breakpoint for the columns, for example, means that an article and an image, for example, will appear adjacent but when the screen is below medium size, the columns will swap back AND stack, with the image on top.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12"><p>This example uses the css class 'bg-cover' to pull the image, and the 'col-md-push-8' IN the div. However, as the image height is restricted to 300px, part of it is cut off when the screen size is reduced.</p></div>
+                <div class="col-md-4 col-md-push-8 bg-cover">
+                    <p>Column 1 - the image</p>
+                </div>
+                <div class="col-md-8 col-md-pull-4 bg-success">
+                    <p>Column 2 - An Article for example</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12"><p>This example uses the html img element to pull the image, inside the 'col-md-push-8' div. This keeps the whole image visible when the screen size is reduced.</p></div>
+                <div class="col-md-4 col-md-push-8">
+                    <img src="img/grayslarder-1193.jpg" class="img-responsive">
+                </div>
+                <div class="col-md-8 col-md-pull-4 bg-success">
+                    <p>Column 2 - An Article for example</p>
+                </div>
+            </div>
+        </div>
+<!-- Bootstrap tutorial 8 - Typography Classes - https://www.youtube.com/watch?v=dGAy2YlnR0g -->
+    <!-- how to use some boostrap typography elements and classes like blockquotes, small tags and headings.-->
+        <h3>Bootstrap Tutorial 8 - Typography</h3>
+        <p>how to use some boostrap typography elements and classes like blockquotes, small tags and headings.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>This is a Header <small>Secondary text</small></h1>
+                    <p class="lead">This is a leading paragraph</p>
+                    <p>This is a normal paragraph</p>
+                    <p><small>Terms and Conditions</small></p>
+                </div>
+                <div class="col-xs-12">
+                    <p>You can <mark>Highlight</mark> text using <mark>mark</mark> element tag<br>
+                    <del>Deleted text</del><br>
+                    <s>Striked Through</s></p>
+                </div>
+                <div class="col-xs-12">
+                    <p class="text-left">Left aligned text.</p>
+                    <p class="text-center">Center aligned text.</p>
+                    <p class="text-right">Right aligned text.</p>
+                    <p class="text-justify">Justified aligned text.</p>
+                </div>
+                <div class="col-xs-12">
+                    <p class="text-lowercase">THIS IS LOWERCASE by CSS</p>
+                    <p class="text-uppercase">this is uppercase by css</p>
+                    <blockquote>
+                        <p>This is a normal Blockquote - Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+                        <footer>Someone famous</footer>
+                    </blockquote>
+                    <blockquote class="blockquote-reverse">
+                        <p>This is a Blockquote, reversed by CSS - Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+                        <footer>Someone famous</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+<!-- Bootstrap tutorial 9 - Tables - https://www.youtube.com/watch?v=YnrEGDdJfSk -->
+    <!--how to use tables in Boostrap.-->
+        <h3>Bootstrap Tutorials 9 - Tables</h3>
+        <p>how to use tables in Boostrap.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-">
+                    <p>This HTML <mark>TABLE</mark> is using the following CSS classes: table, table-bordered, table-hover, table-condensed. The top row uses the CSS class, 'active'. The last row has the class of 'danger'.</p>
+                    <table class="table table-bordered table-hover table-condensed">
+                        <tr class="active">
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Percentage/Year Mark</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Tom</td>
+                            <td>Davis</td>
+                            <td>80%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Clive</td>
+                            <td>Davis</td>
+                            <td>80%</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>3</td>
+                            <td>Rachel</td>
+                            <td>Parsons</td>
+                            <td>80%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+<!-- Bootstrap tutorial 10 - Images - https://www.youtube.com/watch?v=x99gNzHtm0k -->
+    <!-- how to make images responsive and create image shapes. -->
+        <h3>Bootstrap Tutorials 10 - Images</h3>
+        <p>how to make images responsive and create image shapes.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12"><p>The class 'img-responsive' means the image width/height is responive to its column size and the screen size! And 'img-rounded', 'img-circle', and 'img-thumbnail' classes can be used to style the border/outside of the image</p></div>
+                <div class="col-md-4">
+                    <p>Rounded</p>
+                    <img src="img/grayslarder-1193.jpg" class="img-responsive img-rounded">
+                </div>
+                <div class="col-md-4">
+                    <p>Circle</p>
+                    <img src="img/grayslarder-1193.jpg" class="img-responsive img-circle">
+                </div>
+                <div class="col-md-4">
+                    <p>Thumbnail</p>
+                    <img src="img/grayslarder-1193.jpg" class="img-responsive img-thumbnail">
+                </div>
+            </div>
+        </div>
+<!-- Bootstrap tutorial 11 - Buttons - https://www.youtube.com/watch?v=VBKD5q7ohG4 -->
+    <!-- how to create buttons and make them different sizes. -->
+        <h3>Bootstrap Tutorial 11 - Buttons</h3>
+        <p>how to create buttons and make them different sizes.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <p>Four different ways of using the 'btn' and 'btn-default' classes.</p>
+                    <a class="btn btn-default" href="#">Link</a>
+                    <button class="btn btn-default">Button</button>
+                    <input class="btn btn-default" type="button" value="input">
+                    <input class="btn btn-default" type="submit" value="submit">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Buttons can be given the btn-primary, btn-success, btn-danger, btn-warning, btn-info, btn-link, classes, which chane the colour/format of the button</p>
+                    <button class="btn btn-default">Button</button>
+                    <button class="btn btn-primary">Button</button>
+                    <button class="btn btn-success">Button</button>
+                    <button class="btn btn-danger">Button</button>
+                    <button class="btn btn-warning">Button</button>
+                    <button class="btn btn-info">Button</button>
+                    <button class="btn btn-link">Button</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Button size can also be change by btn-lg, btn-sm, btn-xs classes. This can help with fitting in buttons to smaller columns, as long as the text fits too</p>
+                    <button class="btn btn-default">Button</button>
+                    <button class="btn btn-default btn-lg">Button</button>
+                    <button class="btn btn-default btn-sm">Button</button>
+                    <button class="btn btn-default btn-xs">Button</button>
+                </div>
+            </div>
+        </div>
+        
+        <!--Javascript links here-->
+        <!--jQuery above Bootstrap JS file-->
+        <script src="js/jquery.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
