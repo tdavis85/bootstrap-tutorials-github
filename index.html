@@ -20,11 +20,14 @@
         <!--HTML Content here-->
 <!-- Bootstrap Tutorial 5 - Using the Grid - https://www.youtube.com/watch?v=e5VQampkqdg -->
     <!-- cols work by on that screen or larger. col-md-4 means a 4/12 column on medium screens & larger. Columns will stack if they take up more than 12/12 or if the screen size is below the col set size, md for example-->
-        <h1>BootStrap Tutorials</h1>
-        <p>Tutorials 1-4 are for getting started and setting up Bootstrap. The following tutorials are for creating pages</p>
-        <h3>Bootstrap tutorial 5 - Using the Grid</h3>
+        
         <div class="container">
             <div class="row">
+                <div class="col-xs-12">
+                    <h1>BootStrap Tutorials</h1>
+                    <p>Tutorials 1-4 are for getting started and setting up Bootstrap. The following tutorials are for creating pages</p>
+                    <h3>Bootstrap tutorial 5 - Using the Grid</h3>
+                </div>
                 <div class="col-lg-1 col-xs-4 bg-warning">
                     1
                 </div>
@@ -65,9 +68,12 @@
         </div>
 <!-- Bootstrap tutorial 6 - Nesting the grid - https://www.youtube.com/watch?v=x6uafDNy-F4 -->
     <!-- Inner Divs are 'contained' in their outer divs, so they are a proportion of the outer, so on, til the cols go onto differnt lines-->
-        <h3>Bootstrap tutorial 6 - Nesting the Grid</h3>
+        
         <div class="container">    
             <div class="row">
+                <div class="col-xs-12">
+                    <h3>Bootstrap tutorial 6 - Nesting the Grid</h3>
+                </div>
                 <div class="col-lg-12 col-md-6 bg-success">
                     <p>This is an outer div</p>
                     <div class="col-lg-6 col-md-6 bg-primary">
@@ -78,10 +84,13 @@
         </div>
 <!-- Bootstrap tutorial 7 - Push & Pull - https://www.youtube.com/watch?v=6UgQYdhy8uU -->
       <!-- how to swop columns around using push and pull in Bootstrap. -->  
-        <h3>Bootstrap tutorial 7 - Push and Pull</h3>
-        <p>This is really useful for mobile optimisation, with articles/images. Using push and pull to swap column positions, and having a medium breakpoint for the columns, for example, means that an article and an image, for example, will appear adjacent but when the screen is below medium size, the columns will swap back AND stack, with the image on top.</p>
+        
         <div class="container">
             <div class="row">
+                <div class="col-xs-12">
+                    <h3>Bootstrap tutorial 7 - Push and Pull</h3>
+                    <p>This is really useful for mobile optimisation, with articles/images. Using push and pull to swap column positions, and having a medium breakpoint for the columns, for example, means that an article and an image, for example, will appear adjacent but when the screen is below medium size, the columns will swap back AND stack, with the image on top.</p>
+                </div>
                 <div class="col-xs-12"><p>This example uses the css class 'bg-cover' to pull the image, and the 'col-md-push-8' IN the div. However, as the image height is restricted to 300px, part of it is cut off when the screen size is reduced.</p></div>
                 <div class="col-md-4 col-md-push-8 bg-cover">
                     <p>Column 1 - the image</p>
@@ -102,10 +111,13 @@
         </div>
 <!-- Bootstrap tutorial 8 - Typography Classes - https://www.youtube.com/watch?v=dGAy2YlnR0g -->
     <!-- how to use some boostrap typography elements and classes like blockquotes, small tags and headings.-->
-        <h3>Bootstrap Tutorial 8 - Typography</h3>
-        <p>how to use some boostrap typography elements and classes like blockquotes, small tags and headings.</p>
+        
         <div class="container">
             <div class="row">
+                <div class="col-xs-12">
+                    <h3>Bootstrap Tutorial 8 - Typography</h3>
+                    <p>how to use some boostrap typography elements and classes like blockquotes, small tags and headings.</p>
+                </div>
                 <div class="col-xs-12">
                     <h1>This is a Header <small>Secondary text</small></h1>
                     <p class="lead">This is a leading paragraph</p>
@@ -139,12 +151,15 @@
         </div>
 <!-- Bootstrap tutorial 9 - Tables - https://www.youtube.com/watch?v=YnrEGDdJfSk -->
     <!--how to use tables in Boostrap.-->
-        <h3>Bootstrap Tutorials 9 - Tables</h3>
-        <p>how to use tables in Boostrap.</p>
+
         <div class="container">
             <div class="row">
-                <div class="col-xs-">
+                <div class="col-xs-12">
+                    <h3>Bootstrap Tutorials 9 - Tables</h3>
+                    <p>how to use tables in Boostrap.</p>
                     <p>This HTML <mark>TABLE</mark> is using the following CSS classes: table, table-bordered, table-hover, table-condensed. The top row uses the CSS class, 'active'. The last row has the class of 'danger'.</p>
+                </div>
+                <div class="col-xs-12">
                     <table class="table table-bordered table-hover table-condensed">
                         <tr class="active">
                             <th>#</th>
@@ -176,11 +191,14 @@
         </div>
 <!-- Bootstrap tutorial 10 - Images - https://www.youtube.com/watch?v=x99gNzHtm0k -->
     <!-- how to make images responsive and create image shapes. -->
-        <h3>Bootstrap Tutorials 10 - Images</h3>
-        <p>how to make images responsive and create image shapes.</p>
+        
         <div class="container">
             <div class="row">
-                <div class="col-xs-12"><p>The class 'img-responsive' means the image width/height is responive to its column size and the screen size! And 'img-rounded', 'img-circle', and 'img-thumbnail' classes can be used to style the border/outside of the image</p></div>
+                <div class="col-xs-12">
+                    <h3>Bootstrap Tutorials 10 - Images</h3>
+                    <p>how to make images responsive and create image shapes.</p>
+                    <p>The class 'img-responsive' means the image width/height is responive to its column size and the screen size! And 'img-rounded', 'img-circle', and 'img-thumbnail' classes can be used to style the border/outside of the image</p>
+                </div>
                 <div class="col-md-4">
                     <p>Rounded</p>
                     <img src="img/grayslarder-1193.jpg" class="img-responsive img-rounded">
@@ -197,10 +215,13 @@
         </div>
 <!-- Bootstrap tutorial 11 - Buttons - https://www.youtube.com/watch?v=VBKD5q7ohG4 -->
     <!-- how to create buttons and make them different sizes. -->
-        <h3>Bootstrap Tutorial 11 - Buttons</h3>
-        <p>how to create buttons and make them different sizes.</p>
+
         <div class="container">
             <div class="row">
+                <div class="12">
+                    <h3>Bootstrap Tutorial 11 - Buttons</h3>
+                    <p>how to create buttons and make them different sizes.</p>
+                </div>
                 <div class="col-xs-6">
                     <p>Four different ways of using the 'btn' and 'btn-default' classes.</p>
                     <a class="btn btn-default" href="#">Link</a>
@@ -232,10 +253,13 @@
             </div>
         </div>
 <!-- Bootstrap tutorial 12 - Basic Forms -->
-        <h3>Bootstrap tutorial 12 - Basic Forms</h3>
-        <p>how to use bootstrap to make a basic form.</p>
+
         <div class="container">
             <div class="row">
+                <div class="col-xs-12">
+                    <h3>Bootstrap tutorial 12 - Basic Forms</h3>
+                    <p>how to use bootstrap to make a basic form.</p>
+                </div>
                 <div class="col-xs-12">
                     <form action="" method"">
                         <div class="form-group">
